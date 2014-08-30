@@ -368,7 +368,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // Travel limits after homing
 #define X_MAX_POS 205
 #define X_MIN_POS 0
-#define Y_MAX_POS 205
+#define Y_MAX_POS 150
 #define Y_MIN_POS 0
 #define Z_MAX_POS 200
 #define Z_MIN_POS 0
@@ -640,17 +640,17 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
   #define ULTIPANEL
 
   #ifndef ENCODER_PULSES_PER_STEP
-  #define ENCODER_PULSES_PER_STEP 4
+    #define ENCODER_PULSES_PER_STEP 4
   #endif
 
   #ifndef ENCODER_STEPS_PER_MENU_ITEM
-  #define ENCODER_STEPS_PER_MENU_ITEM 1
+    #define ENCODER_STEPS_PER_MENU_ITEM 1
   #endif
 
 
   #ifdef LCD_USE_I2C_BUZZER
-  #define LCD_FEEDBACK_FREQUENCY_HZ 1000
-  #define LCD_FEEDBACK_FREQUENCY_DURATION_MS 100
+    #define LCD_FEEDBACK_FREQUENCY_HZ 1000
+    #define LCD_FEEDBACK_FREQUENCY_DURATION_MS 100
   #endif
 
 #endif
